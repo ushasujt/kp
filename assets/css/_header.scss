@@ -1,0 +1,94 @@
+@import 'variables';
+@import 'responsive';
+@import 'headlist';
+@import 'mixins';
+@import 'effect';
+.header-wrapper-class {
+    .navbar {
+        font-family: $main-font;
+        .company-logo {
+          max-width: 116px;
+        }
+      $nav-height: 4rem;
+      $nav-width: 100vw;
+      $nav-padding: 200px;
+      $nav-brand-height: 1.25rem;
+      $md: 991px + $nav-padding;
+      width: 100%;
+      min-height: $nav-height;
+      background: white;
+      display: flex;  
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: $md) {
+        flex-direction: column;  
+        align-items: flex-start; 
+        padding: 0;
+        width: 100%;
+      }
+      
+      & .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: $md) {
+          width: 100%;
+        }
+      }
+      
+      & button {
+        cursor: pointer;
+        background: $secondary-color;
+        border: none;
+        outline: none;    
+        font-size: 1rem;
+        margin-right: 2rem;
+        
+        @media (max-width: $md) {
+          height: $nav-height;
+          display: flex;
+          flex-direction: center;
+          justify-content: center;
+          align-items: center;    
+        }
+      }
+    
+      
+      & .menu-btn {
+        margin-right: 0;
+        padding-right: $nav-brand-height / 2;
+        @media (min-width: $md) {
+          display: none;
+        }
+      }
+      
+      & .tab {    
+        color: $main-color;
+        font-weight:600;
+
+        border-bottom:3px solid $secondary-color;
+        &:hover {
+            border-bottom:3px solid $main-color;
+
+        }
+        
+        &:nth-last-child(1) {
+          margin-right: 0;
+        }
+      }
+      
+      & .tabs {
+        @media (max-width: $md) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          
+          &.hidden {
+            display: none;
+          }
+        }
+      }
+    }
+    
+}

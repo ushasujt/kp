@@ -1,0 +1,25 @@
+@media (max-width: 627px) {
+    .article-three-head2 {
+        font-size: 34px !important;
+    }
+}
+
+@media (max-width:1020px) {
+    .banner-title {
+        font-size: 40px !important;
+    }
+    .main-wrapper .banner-link-scroll {
+        -webkit-transform: rotate(-360deg) !important;
+        display:block !important;
+        bottom: -44px !important;
+        left:34px !important;
+    }
+}
+
+@media (max-width: 378px) {
+    .newsletter-banner {
+        &-title {
+          font-size: 30px !important;
+        }
+      }
+}

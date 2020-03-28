@@ -1,0 +1,29 @@
+<?php
+   include("header.php");
+?>
+<main class="main-wrapper container mb-5">
+<?php
+   include("article1.php");
+?>
+<?php
+   include("article2.php");
+?>
+<?php
+   include("article3.php");
+?>
+<?php
+   include("newsletter.php");
+?>
+<?php
+   include("features.php");
+?>
+<?php
+   include("plans.php");
+?>
+<?php
+   include("blog.php");
+?>
+</main>
+<?php
+   include("footer.php");
+?>
